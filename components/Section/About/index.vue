@@ -1,7 +1,6 @@
 <template>
-    <SectionHomeHeros />
-    <SectionHomeSkills />
-    <SectionHomePortfolio />
+    <SectionAboutInfo />
+    <SectionAboutExperience />
 </template>
 
 <script setup lang="ts"></script>

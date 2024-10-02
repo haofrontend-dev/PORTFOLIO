@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const animation = useAnimation()
+
 const items = [
     'skill-icons:nuxtjs-dark',
     'skill-icons:javascript',
@@ -6,11 +8,21 @@ const items = [
     'skill-icons:css',
     'skill-icons:nodejs-dark',
     'skill-icons:react-dark',
+    'skill-icons:expressjs-dark',
+    'skill-icons:php-dark',
+    'skill-icons:laravel-dark',
+    'skill-icons:vuejs-dark',
+    'skill-icons:tailwindcss-dark',
+    'skill-icons:docker',
+    'skill-icons:redis-dark',
+    'skill-icons:mysql-dark',
+    'skill-icons:postgresql-dark',
 ]
 
 const carouselRef = ref()
 
 onMounted(() => {
+    animation.fade('.image-skill', { y: 100 })
     setInterval(() => {
         if (!carouselRef.value) return
 
@@ -24,14 +36,14 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="skill my-20">
+    <div class="skill py-20">
         <h1
             class="text-center text-4xl drop-shadow italic shadow-white bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text"
         >
             Skills
         </h1>
 
-        <div class="my-10">
+        <div class="my-10 relative">
             <Carousel
                 :itemsToShow="3.95"
                 :autoplay="2000"
@@ -42,6 +54,16 @@ onMounted(() => {
                     <Icon :name="item" size="7rem" />
                 </Slide>
             </Carousel>
+
+            <div
+                class="image-skill flex justify-center mt-4 -z-[1] absolute opacity-80 top-10 lg:-top-7 left-1/2 -translate-x-1/2"
+            >
+                <img
+                    src="~/assets/svg/skill.svg"
+                    alt="skill"
+                    class="min-w-[200px] w-[300px] lg:w-[600px]"
+                />
+            </div>
         </div>
     </div>
 </template>

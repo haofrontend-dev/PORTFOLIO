@@ -13,16 +13,16 @@ export default defineNuxtConfig({
     },
     compatibilityDate: '2024-04-03',
     colorMode: {
-        preference: 'light',
+        preference: 'dark',
     },
     devtools: { enabled: true },
     modules: [
-      '@nuxt/ui',
-      '@nuxtjs/tailwindcss',
-      '@nuxt/icon',
-      '@nuxtjs/color-mode',
-      '@nuxt/fonts',
-      'vue3-carousel-nuxt',
+        '@nuxt/ui',
+        '@nuxtjs/tailwindcss',
+        '@nuxt/icon',
+        '@nuxtjs/color-mode',
+        '@nuxt/fonts',
+        'vue3-carousel-nuxt',
     ],
     css: ['~/assets/css/global.css'],
 })

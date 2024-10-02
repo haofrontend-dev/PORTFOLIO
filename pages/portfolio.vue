@@ -1,7 +1,5 @@
 <template>
-    <SectionHomeHeros />
-    <SectionHomeSkills />
-    <SectionHomePortfolio />
+    <div></div>
 </template>
 
 <script setup lang="ts"></script>
