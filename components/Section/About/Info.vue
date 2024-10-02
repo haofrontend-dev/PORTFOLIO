@@ -19,7 +19,11 @@ onMounted(() => {
     <div class="relative">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 relative z-10">
             <div class="flex items-center justify-center about-image">
-                <img src="~/assets/img/hero.jpg" alt="Hero image" />
+                <img
+                    src="~/assets/img/hero.jpg"
+                    alt="Hero image"
+                    class="w-[300px]"
+                />
             </div>
             <div class="p-5 text-center about-info">
                 <h1

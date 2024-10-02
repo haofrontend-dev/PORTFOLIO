@@ -34,6 +34,7 @@ const links = [
                     :trailing="false"
                     :ui="{ rounded: 'rounded-full' }"
                     class="lg:flex hidden"
+                    to="tel:+0393855939"
                 />
 
                 <UVerticalNavigation

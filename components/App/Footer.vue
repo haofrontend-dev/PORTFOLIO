@@ -24,6 +24,7 @@
                 :ui="{ rounded: 'rounded-full', base: 'font-semibold' }"
                 to="mailto:haoqn.work@gmail.com"
                 icon="mdi:email"
+                target="_blank"
             >
             </UButton>
             <p class="text-sm text-slate-400">
